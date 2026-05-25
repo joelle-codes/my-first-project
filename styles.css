@@ -29,7 +29,7 @@ h2{
     color: rgb(87, 70, 180);
     
 }
-p{
+.service{
     color: navy;
 }
 button{
@@ -52,4 +52,24 @@ a:active {
 }
 a:hover {
     color: crimson;
+}
+.breadcrumbs {
+    background-color: skyblue;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+} 
+.breadcrumbs a:not(:last-child)::after {
+    content: "/";
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+}
+.breadcrumbs a:hover {
+    color: black;
 }
